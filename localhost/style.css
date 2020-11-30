@@ -1,0 +1,81 @@
+.grid {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-areas:
+		"header"
+		"article"
+		"aside"
+		"footer"
+    "LogIn"
+    "LotCr";
+}
+
+header {
+	grid-area: header;
+}
+
+input{
+  background-color: #eeeeee
+}
+
+.LotCr{
+  grid-area: LotCr;
+}
+
+#LogIn{
+  grid-area: LogIn
+}
+
+article {
+	grid-area: article;
+}
+
+aside {
+	grid-area: aside;
+}
+
+footer {
+	grid-area: footer;
+	background-color: #ffffff;
+
+	}
+
+div.Lot {
+	background-color: #20614E;
+	border: 10px solid #11511E;
+	border-radius: 40px;
+	padding: 0px 30px 20px;
+	color: #ffffff;
+	margin: 10px
+}
+
+div.TekeLot {
+	background-color: #61204E;
+	border: 10px solid #51111E;
+	border-radius: 40px;
+	padding: 0px 30px 20px;
+	color: #ffffff;
+	margin: 10px
+}
+
+@media (min-width: 640px) {
+	.grid {
+		grid-template-columns: 2fr 1fr;
+		grid-template-areas:
+			"header header"
+			"LotCr LogIn"
+			"article aside"
+			"footer footer"
+	}
+}
+
+.grid > * {
+	background-color: #555555;
+	border: 1px solid #212941;
+	border-radius: 5px;
+	padding: 8px 15px;
+	color: #ffffff;
+	font-size: 18px;
+	font-family: roboto;
+}
+
